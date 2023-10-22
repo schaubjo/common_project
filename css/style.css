@@ -1,12 +1,20 @@
 body {
     background-color: blanchedalmond;
     color: darkblue;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 h1 {
     font-size: 50px;
     font-family: Courier, Impact, Arial;
     text-align: center;
+}
+
+nav {
+    border: 2px solid darkblue;
+    padding: 10px;
+    margin: 20px;
 }
 
 h2,
@@ -29,7 +37,7 @@ nav a {
     text-decoration: underline;
 }
 
-li {
+ul>li {
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -52,14 +60,9 @@ p {
     line-height: 2;
 }
 
+
+
 @media screen and (min-width: 800px) {
-
-
-    nav {
-        border: 2px solid darkblue;
-        padding: 10px;
-        margin: 20px;
-    }
 
     .photo-gallery>img {
         width: 300px;
@@ -70,7 +73,7 @@ p {
     }
 
 
-    li {
+    ul>li {
         display: inline-block;
         margin-left: 50px;
         height: 50px;
