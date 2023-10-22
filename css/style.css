@@ -3,12 +3,6 @@ body {
     color: darkblue;
 }
 
-nav {
-    border: 2px solid darkblue;
-    padding: 10px;
-    margin: 20px;
-}
-
 h1 {
     font-size: 50px;
     font-family: Courier, Impact, Arial;
@@ -23,38 +17,79 @@ h3 {
     border-top-right-radius: 30px;
 }
 
-p {
-    line-height: 2;
+nav a {
+    font-size: 18px;
 }
 
-img {
+#skip {
+    display: none;
+}
+
+.current-page {
+    text-decoration: underline;
+}
+
+li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.photo-gallery>img {
+    width: 150px;
+    height: 120px;
     border: 5px solid darkblue;
     padding: 10px;
     margin: 20px;
 }
 
-li {
-    display: inline-block;
-    margin-left: 50px;
-    height: 50px;
+p {
+    line-height: 2;
 }
 
-nav a {
-    background-color: yellow;
-    padding: 5px;
-    margin: 20px;
+@media screen and (min-width: 800px) {
+
+
+    nav {
+        border: 2px solid darkblue;
+        padding: 10px;
+        margin: 20px;
+    }
+
+    .photo-gallery>img {
+        width: 300px;
+        height: 240px;
+        border: 5px solid darkblue;
+        padding: 10px;
+        margin: 20px;
+    }
+
+
+    li {
+        display: inline-block;
+        margin-left: 50px;
+        height: 50px;
+    }
+
+    nav a {
+        background-color: yellow;
+        padding: 5px;
+        margin: 20px;
+    }
+
+    #skip {
+        display: block;
+    }
+
+    .thumbnail {}
+
+    .page-link-header {
+        border: 2px solid darkblue;
+        padding: 10px;
+    }
 }
-
-#skip {
-
-}
-
-.thumbnail {
-    
-}
-
-.page-link-header {
-    border: 2px solid darkblue;
-    padding: 10px;
-}
-
