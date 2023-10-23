@@ -5,7 +5,8 @@ body {
     margin-right: 10px;
 }
 
-img {
+img,
+video {
     width: 400px;
 }
 
