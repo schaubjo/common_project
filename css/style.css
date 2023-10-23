@@ -5,6 +5,10 @@ body {
     margin-right: 10px;
 }
 
+img {
+    width: 400px;
+}
+
 h1 {
     font-size: 50px;
     font-family: Courier, Impact, Arial;
