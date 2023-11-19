@@ -72,6 +72,16 @@ p {
 }
 
 
+button {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-align: center;
+}
+
 @keyframes slide-left {
     from {
         transform: translateX(100%);
@@ -94,9 +104,55 @@ p {
     .gif {
         display: none;
     }
+
+    button {
+        display: none;
+    }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
+
+    .photo-gallery>img,
+    .photo-gallery>video {
+        width: 300px;
+        height: 240px;
+    }
+
+
+    ul>li {
+        display: inline-block;
+        margin-left: 50px;
+        margin-right: 50px;
+        height: 50px;
+    }
+
+
+    nav a {
+        background-color: yellow;
+        padding: 5px;
+        margin: 20px;
+    }
+
+    #skip {
+        display: block;
+    }
+
+    .page-link-header {
+        border: 2px solid darkblue;
+        padding: 10px;
+    }
+
+
+    @media (prefers-reduced-motion: no-preference) {
+
+        p:hover,
+        p:focus {
+            font-size: 25px;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
 
     .photo-gallery>img,
     .photo-gallery>video {

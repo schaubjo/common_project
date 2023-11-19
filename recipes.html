@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Recipes</title>
+
 </head>
 
 <body>
@@ -169,7 +170,11 @@
             </div>
 
         </div>
+        <button onclick="toTop()"> Back to top</button>
     </main>
+    <script>
+        const toTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+    </script>
 </body>
 
 </html>

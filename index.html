@@ -7,11 +7,12 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Pets</title>
+
 </head>
 
 <body>
     <a id="skip" href="#main">Skip to Main Content</a>
-    <nav>
+    <nav class="page-transition">
         <ul>
             <li class="page-links current-page">
                 <a href="index.html">Home/Pets</a>
@@ -226,13 +227,13 @@
                 <li>Nap time</li>
             </ul>
         </div>
-    </main>
+        <button onclick="toTop()"> Back to top</button>
 
+    </main>
+    <script>
+        const toTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+    </script>
 </body>
 
+
 </html>
-
-
-<!-- https://github.com/zachgranados/first_site/tree/main/images
-
-https://github.com/JulianMu16/first_site -->
