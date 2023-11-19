@@ -133,8 +133,20 @@ button {
         margin: 20px;
     }
 
-    #skip {
-        display: block;
+    .skip {
+        position: absolute;
+        left: -9999px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+
+    /* Make the skip link visible when focused */
+    .skip:focus {
+        position: static;
+        width: auto;
+        height: auto;
     }
 
     .page-link-header {
